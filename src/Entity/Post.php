@@ -16,6 +16,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PostRepository")
@@ -49,6 +50,7 @@ class Post
      *
      * @ORM\Column(type="string")
      * @Assert\NotBlank
+     * @Groups ({"read:full:comment"})
      */
     private $title;
 
