@@ -17,12 +17,20 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Serializer\Annotation\Groups;
-
+use ApiPlatform\Core\Annotation\ApiResource;
+use App\Controller\Api\EmptyController;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PostRepository")
  * @ORM\Table(name="symfony_demo_post")
  * @UniqueEntity(fields={"slug"}, errorPath="title", message="post.slug_unique")
- *
+ * @ApiResource(
+ *     collectionOperations={},
+ *     itemOperations={
+ *     "get"={
+ *     "controller"= "EmptyController::class", "post"=false,"deserialize"= false
+ *          }
+ *     }
+ * )
  * Defines the properties of the Post entity to represent the blog posts.
  *
  * See https://symfony.com/doc/current/doctrine.html#creating-an-entity-class

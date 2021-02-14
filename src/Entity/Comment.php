@@ -20,6 +20,8 @@ use ApiPlatform\Core\Annotation\ApiFilter;
 use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Api\FilterInterface;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
+use App\Controller\Api\CommentCreatController;
+use Symfony\Component\Security\Core\Security;
 
 /**
  * @ORM\Entity
@@ -28,13 +30,27 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
  * @ApiResource(
  *
  *     attributes= {"order"= {"publishedAt":"DESC"}},
+ *
  *     paginationItemsPerPage=2,
  *     normalizationContext={"groups"={"read: comment"}},
- *     collectionOperations={"get"},
- *     itemOperations={"get"={
-            "normalization_context"={"Groups"={"read:comment","read:full;comment"}}
- *          }
  *
+ *     collectionOperations={
+ *     "get","post"={"security"="is_granted('IS_AUTHENTICATED_FULLY')", "controller" =CommentCreatController::class}
+ *
+ *     },
+ *
+ *
+ *     itemOperations={
+ *     "get"={
+            "normalization_context"={"groups"={"read:comment", "read:full:comment"}}
+ *        },
+ *      "put"={
+ *      "security"="is_granted('EDIT_COMMENT',object)",
+ *
+ *       },
+ *      "delete"={
+ *          "security"="is_granted('EDIT_COMMENT',object)"
+ *         }
  *     }
  * )
  * @ApiFilter (SearchFilter::class, properties={"post":"exact"})
@@ -62,10 +78,9 @@ class Comment
 
     /**
      * @var Post
-     * @Groups ({"read:full: comment"})
-     *
      * @ORM\ManyToOne(targetEntity="Post", inversedBy="comments")
      * @ORM\JoinColumn(nullable=false)
+     * @Groups ({"read:full:comment"})
      */
     private $post;
 
@@ -80,12 +95,13 @@ class Comment
      *     max=10000,
      *     maxMessage="comment.too_long"
      * )
+     * @Groups ({"read:comment"})
      */
     private $content;
 
     /**
      * @var \DateTime
-     * @Groups ({"read: comment"})
+     *
      * @ORM\Column(type="datetime")
      */
     private $publishedAt;
