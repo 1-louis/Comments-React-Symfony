@@ -15,4 +15,4 @@ import './highlight.js';
 import './doclinks.js';
 
 //le javascript version
-import './comment/comments.jsx';
+import './comment/Comments.jsx';

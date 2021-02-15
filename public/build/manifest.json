@@ -39,5 +39,6 @@
   "build/images/fa-brands-400.svg": "http://localhost:8080/build/images/fa-brands-400.e33e2cf6.svg",
   "build/images/fa-regular-400.svg": "http://localhost:8080/build/images/fa-regular-400.06b9d19c.svg",
   "build/images/fa-solid-900.svg": "http://localhost:8080/build/images/fa-solid-900.371dbce0.svg",
-  "build/images/glyphicons-halflings-regular.svg": "http://localhost:8080/build/images/glyphicons-halflings-regular.060b2710.svg"
+  "build/images/glyphicons-halflings-regular.svg": "http://localhost:8080/build/images/glyphicons-halflings-regular.060b2710.svg",
+  "build/vendors~search.js": "http://localhost:8080/build/vendors~search.js"
 }

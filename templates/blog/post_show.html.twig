@@ -51,10 +51,12 @@
             <p>{{ 'post.no_comments'|trans }}</p>
         </div>
     {% endfor %} #}
-{% endblock %}
-<post-comments data-post = " {{ post.id }}" data-users="{{ app.user? app.user.id:0 }}">
+    <post-comments data-post = " {{ post.id }}" data-user="{{ app.user? app.user.id:0 }}">
 
-</post-comments>
+    </post-comments>
+
+{% endblock %}
+
 {% block sidebar %}
     {% if is_granted('edit', post) %}
         <div class="section">

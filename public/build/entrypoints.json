@@ -39,6 +39,7 @@
         "http://localhost:8080/build/vendors~admin~app~login~search.js",
         "http://localhost:8080/build/vendors~admin~app~search.js",
         "http://localhost:8080/build/vendors~app~search.js",
+        "http://localhost:8080/build/vendors~search.js",
         "http://localhost:8080/build/search.js"
       ]
     }
