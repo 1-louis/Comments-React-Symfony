@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57f6379a-a730-42b0-884f-5afcf7e45a7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/components/Icon.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/comment/comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/comment/Comments.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/comment/hooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/comment/hooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/post_show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/post_show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +163,7 @@
       <workItem from="1613212685168" duration="12659000" />
       <workItem from="1613289418757" duration="34651000" />
       <workItem from="1613364618050" duration="25000" />
-      <workItem from="1613364695959" duration="7006000" />
+      <workItem from="1613364695959" duration="7307000" />
     </task>
     <servers />
   </component>
