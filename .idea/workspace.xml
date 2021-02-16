@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="57f6379a-a730-42b0-884f-5afcf7e45a7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/comment/Comments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/comment/Comments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +140,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1oQJ0XKL49KtcBRD8AZTNLB4bem" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -163,7 +169,7 @@
       <workItem from="1613212685168" duration="12659000" />
       <workItem from="1613289418757" duration="34651000" />
       <workItem from="1613364618050" duration="25000" />
-      <workItem from="1613364695959" duration="7307000" />
+      <workItem from="1613364695959" duration="12974000" />
     </task>
     <servers />
   </component>
@@ -177,12 +183,6 @@
           <url>file://$PROJECT_DIR$/assets/js/comment/Comments.jsx</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/assets/js/comment/Comments.jsx</url>
-          <line>5</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
